@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       {colorILike.map(palette => (
-        <Color name={palette.name} picture={palette.image} />
+        <Color key={palette.name} name={palette.name} picture={palette.image} />
       ))}
     </div>
   );
